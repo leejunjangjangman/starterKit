@@ -52,3 +52,7 @@ console-*.log
 
 # .claude/commands
 .claude/commands/git/commit.md
+
+# .claude 로컬 전용 파일
+.claude/agent-memory/
+.claude/settings.local.json
