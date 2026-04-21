@@ -61,6 +61,7 @@ export function MobileMenu({ navItems }: MobileMenuProps) {
             <li key={item.href}>
               <Link
                 href={item.href}
+                prefetch={item.href !== '/docs'}
                 className="flex h-10 items-center rounded-md px-3 text-sm font-medium text-foreground hover:bg-muted transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
                 {...(item.external
