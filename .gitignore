@@ -49,3 +49,6 @@ next-env.d.ts
 
 # console logs
 console-*.log
+
+# .claude/commands
+.claude/commands/git/commit.md
