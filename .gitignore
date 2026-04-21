@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Playwright MCP 스크린샷 출력 폴더
+/screenshots/
+
+# local MCP config
+.mcp.json
+.playwright-mcp/
+
+# console logs
+console-*.log
