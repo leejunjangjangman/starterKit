@@ -1,3 +1,5 @@
+import type React from 'react'
+
 // 네비게이션 아이템
 export interface NavItem {
   label: string
