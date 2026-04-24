@@ -43,16 +43,12 @@ next-env.d.ts
 # Playwright MCP 스크린샷 출력 폴더
 /screenshots/
 
-# local MCP config
-.mcp.json
+# Playwright MCP 런타임 파일
 .playwright-mcp/
 
 # console logs
 console-*.log
 
-# .claude/commands
-.claude/commands/git/commit.md
-
 # .claude 로컬 전용 파일
 .claude/agent-memory/
-.claude/settings.local.json
+.claude/slack-webhook.env

@@ -1,0 +1,30 @@
+{
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "enableAllProjectMcpServers": true,
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'set -a; source .claude/slack-webhook.env 2>/dev/null; set +a; \"/opt/homebrew/bin/node\" \"/Users/ijun/.claude/hooks/slack-notify.js\" Notification'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'set -a; source .claude/slack-webhook.env 2>/dev/null; set +a; \"/opt/homebrew/bin/node\" \"/Users/ijun/.claude/hooks/slack-notify.js\" Stop'"
+          }
+        ]
+      }
+    ]
+  }
+}
