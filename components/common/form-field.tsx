@@ -9,6 +9,7 @@ import {
   Controller,
 } from 'react-hook-form'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 
 interface FormFieldProps<T extends FieldValues> {
@@ -38,12 +39,7 @@ export function FormField<T extends FieldValues>({
       name={name}
       render={({ field, fieldState: { error } }) => (
         <div className="space-y-2">
-          <label
-            htmlFor={name}
-            className="block text-sm font-medium text-foreground"
-          >
-            {label}
-          </label>
+          <Label htmlFor={name}>{label}</Label>
           <Input
             id={name}
             type={type}
